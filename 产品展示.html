@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="css/css.css" type="text/css" rel="stylesheet">
+  <meta name="viewport"  content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui=yes">
+  <meta id="viewport" name="viewport" content="width=640,minimum-scale=1,maximum-scale=1,user-scalable=0">
+<title>金海--产品展示</title>
+<script>window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;      
+        //找到标签名叫html的 第一个
+        var _html = document.getElementsByTagName('html')[0];
+//如果view_width（屏幕的宽度）大于640了
+        //用 640 / 16 = 40
+        //小于640 （尺寸不确定了） 永远用 尺寸 / 16
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        /*
+            最大网页尺寸：640px
+            最大的字体（根字体大小）：40px
+        */
+    }
+</script>
+</head>
+
+<body>
+<!--top1-->
+<div class="top1s">
+<div class="top1">
+     <p style="margin-left:50px;">今天是：2016-01-16  星期六</p>
+     <p style="float:right;"><a href="index.html">网站首页</a>  |  <a href="#">关于我们</a>  |  <a href="#">联系我们</a>  | <a href="#">设为首页</a>  |  <a href="#">加入收藏</a></p>
+</div>
+</div>
+
+<!--top2-->
+<div class="top2s">
+<div class="top2">
+     <h2><a href="#">河北金海蛟龙管道有限公司</a></h2>
+     <h5><a href="#"><img src="images/dianhua.jpg"></a> 15076391188</h5>
+</div>
+</div>
+
+<!--nav-->
+<div class="nav">
+     <ul>
+          <li style="margin-left:0;"><a href="index.html">网站首页</a></li>
+          <li><a href="关于我们.html">关于我们</a></li>
+          <li><a href="新闻资讯.html">新闻资讯</a></li>
+          <li><a href="产品展示.html">产品展示</a></li>
+          <li><a href="#">工程案例</a></li>
+          <li><a href="#">资质荣誉</a></li>
+          <li><a href="#">请您留言</a></li>
+          <li><a href="#">联系我们</a></li>     
+     </ul>
+</div>
+
+<!--banner-->
+<div id="banner" >
+	<ul id="lunbo">
+    	<li class="red" style="opacity:1"><img src="images/banner1.jpg" style="width:100%; height:536px;"></li>
+    	<li class="blue"><img src="images/banner2.jpg" style="width:100%; height:536px;"></li>
+    	<li class="green"><img src="images/banner3.jpg" style="width:100%; height:536px;"></li>
+    </ul>
+	<ul id="anniu">
+    	<li class="" onclick="an1()">1</li>
+    	<li class="" onclick="an2()">2</li>
+    	<li class="" onclick="an3()">3</li>
+    </ul>
+</div>
+<script>
+var tu=document.getElementById("lunbo").getElementsByTagName("li");
+var an=document.getElementById("anniu").getElementsByTagName("li");
+document.write(an[0].className)
+function an1(){
+	tu[0].style.opacity=1;
+	tu[1].style.opacity=0;
+	tu[2].style.opacity=0;
+	an[0].className="orange";
+	an[1].className="";
+	an[2].className="";
+	}
+function an2(){
+	tu[0].style.opacity=0;
+	tu[1].style.opacity=1;
+	tu[2].style.opacity=0;
+	an[0].className="";
+	an[1].className="orange";
+	an[2].className="";
+	}
+function an3(){
+	tu[0].style.opacity=0;
+	tu[1].style.opacity=0;
+	tu[2].style.opacity=1;
+	an[0].className="";
+	an[1].className="";
+	an[2].className="orange";
+	}
+	
+</script>
+
+<!--产品展示-->
+<div class="xinwenzixun">
+<div class="xwzx">
+     <div class="show1">
+          <a href="#"><img src="images/tp24.jpg"></a>    
+          <ul class="ul">
+               <li style=" border-top:dashed 1px #c8cbde;"><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　cpvc电力管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　电力管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　mpp电缆保护管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　玻璃钢电缆保护管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　PE给水管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　pvc给水管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　多孔梅花管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　碳素螺纹护套管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　HDPE大口径波纹管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　钢带增强螺旋波纹管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　栅格管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　硅芯管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　集束管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　农田灌溉管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+               <li><a href="#"><img src="images/tp22.jpg" style="float:left; width:4px; height:12px; margin-left:18px;">　热浸塑钢管<img src="images/tp23.jpg" style="width:7px; height:4px; float:right; margin-right:20px;"></a></li>
+
+          </ul>
+          <a href="#"><img src="images/tp20.jpg" style="width:222px; height:96px;"></a>        
+          <a href="#"><img src="images/tp21.jpg" style="width:222px; height:96px;"></a>        
+     </div>
+     
+     <div class="show2">
+          <h2><a href="#"><img src="images/tp26.jpg"></a><span>当前位置：<a href="#">首页</a>—<a href="#">产品展示</a></span></h2>
+          
+          <div class="show3">
+               <div class="show31" style="margin-left:0;"><a href="#"><img src="images/tp27.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp34.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp28.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp29.jpg"></a><p><a href="#">电力管</a></p></div> 
+          </div>
+
+          <div class="show3">
+               <div class="show31" style="margin-left:0;"><a href="#"><img src="images/tp30.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp31.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp32.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp33.jpg"></a><p><a href="#">电力管</a></p></div> 
+          </div>
+
+          <div class="show3">
+               <div class="show31" style="margin-left:0;"><a href="#"><img src="images/tp27.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp34.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp28.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp29.jpg"></a><p><a href="#">电力管</a></p></div> 
+          </div>
+
+          <div class="show3">
+               <div class="show31" style="margin-left:0;"><a href="#"><img src="images/tp30.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp31.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp32.jpg"></a><p><a href="#">电力管</a></p></div>
+               <div class="show31"><a href="#"><img src="images/tp33.jpg"></a><p><a href="#">电力管</a></p></div> 
+          </div>
+     </div>
+
+</div>
+</div>
+
+<br>
+<div class="clear"></div>
+<!--bottom-->
+<div class="bottom">
+     <div class="bottom1">
+     <div class="bottom11">
+          <a href="#"><img src="images/tp16.jpg"></a>
+          <p><a href="#">cpvc电力管</a>  |  <a href="#">电力管</a>  |  <a href="#">mpp电缆保护管</a>  |  <a href="#">玻璃钢电缆保护管</a></p> 
+     </div>
+     </div>
+     <p>Copright©2016 <a href="#">河北金海蛟龙管道有限公司</a>版权所有     技术支持：小象网络    电话：15076391188    访问量：254</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

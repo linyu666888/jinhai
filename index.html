@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="css/css.css" type="text/css" rel="stylesheet">
+  <meta name="viewport"  content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui=yes">
+  <meta id="viewport" name="viewport" content="width=640,minimum-scale=1,maximum-scale=1,user-scalable=0">
+<title>金海-首页</title>
+<script>window.onload = window.onresize = function(){
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;      
+        //找到标签名叫html的 第一个
+        var _html = document.getElementsByTagName('html')[0];
+//如果view_width（屏幕的宽度）大于640了
+        //用 640 / 16 = 40
+        //小于640 （尺寸不确定了） 永远用 尺寸 / 16
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+        /*
+            最大网页尺寸：640px
+            最大的字体（根字体大小）：40px
+        */
+    }
+</script>
+</head>
+
+<body>
+<!--top1-->
+<div class="top1s">
+<div class="top1">
+     <p style="margin-left:50px;">今天是：2016-01-16  星期六</p>
+     <p style="float:right;"><a href="#">网站首页</a>  |  <a href="#">关于我们</a>  |  <a href="#">联系我们</a>  | <a href="#">设为首页</a>  |  <a href="#">加入收藏</a></p>
+</div>
+</div>
+
+<!--top2-->
+<div class="top2s">
+<div class="top2">
+     <h2><a href="#">河北金海蛟龙管道有限公司</a></h2>
+     <h5><a href="#"><img src="images/dianhua.jpg"></a> 15076391188</h5>
+</div>
+</div>
+
+<!--nav-->
+<div class="nav">
+     <ul>
+          <li style="margin-left:0;"><a href="#">网站首页</a></li>
+          <li><a href="关于我们.html">关于我们</a></li>
+          <li><a href="新闻资讯.html">新闻资讯</a></li>
+          <li><a href="产品展示.html">产品展示</a></li>
+          <li><a href="#">工程案例</a></li>
+          <li><a href="#">资质荣誉</a></li>
+          <li><a href="#">请您留言</a></li>
+          <li><a href="#">联系我们</a></li>     
+     </ul>
+</div>
+
+<!--banner-->
+<div id="banner" >
+	<ul id="lunbo">
+    	<li class="red" style="opacity:1"><img src="images/banner1.jpg" style="width:100%; height:536px;"></li>
+    	<li class="blue"><img src="images/banner2.jpg" style="width:100%; height:536px;"></li>
+    	<li class="green"><img src="images/banner3.jpg" style="width:100%; height:536px;"></li>
+    </ul>
+	<ul id="anniu">
+    	<li class="" onclick="an1()">1</li>
+    	<li class="" onclick="an2()">2</li>
+    	<li class="" onclick="an3()">3</li>
+    </ul>
+</div>
+<script>
+var tu=document.getElementById("lunbo").getElementsByTagName("li");
+var an=document.getElementById("anniu").getElementsByTagName("li");
+document.write(an[0].className)
+function an1(){
+	tu[0].style.opacity=1;
+	tu[1].style.opacity=0;
+	tu[2].style.opacity=0;
+	an[0].className="orange";
+	an[1].className="";
+	an[2].className="";
+	}
+function an2(){
+	tu[0].style.opacity=0;
+	tu[1].style.opacity=1;
+	tu[2].style.opacity=0;
+	an[0].className="";
+	an[1].className="orange";
+	an[2].className="";
+	}
+function an3(){
+	tu[0].style.opacity=0;
+	tu[1].style.opacity=0;
+	tu[2].style.opacity=1;
+	an[0].className="";
+	an[1].className="";
+	an[2].className="orange";
+	}
+	
+</script>
+
+<!--新闻资讯-->
+<div class="news">
+<div class="new">
+     <div class="new1"><p>新闻资讯<br><span>News information</span></p></div>
+     <div class="new2">
+          <a href="#"><img src="images/tp1.jpg"></a>
+<!--选项卡-->
+<div class="box">
+
+   <div class="bb">
+	<ul id="newstitle">
+    	<li class="current">企业新闻</li>
+    	<li >行业资讯</li>
+    	<li >通知公告</li>
+        <span style="float:right; line-height:48px; font-size:14px;">MORE+</span>
+    </ul>
+   </div>
+
+   <div class="clear"></div>
+   <div id="newscontent">
+    	<ul class="k1">
+        	<li><a href="#">·　河北首越集团员工河北首越集团员工风采<span>2015-9-10</span></a></li>
+         	<li><a href="#">·　河北首越集团员工河北首越集团领导风采<span>2015-9-10</span></a></li>
+        	<li><a href="#">·　首越集团员工河北首越集团员工风采<span>2015-9-10</span></a></li>           
+        </ul>
+        
+    	<ul style="display:none;" class="k1">
+        	<li><a href="#">·　河北首越集团员工资讯资讯资讯资讯资讯<span>2015-8-12</span></a></li>
+         	<li><a href="#">·　资讯资讯资讯资讯河北首越集团领导风采<span>2015-8-12</span></a></li>
+        	<li><a href="#">·　资讯资讯资讯资讯河北首越集团领导<span>2015-8-12</span></a></li>           
+        </ul>
+        
+    	<ul style="display:none;" class="k1">
+        	<li><a href="#">·　公告公告公告公告公告公告公告公告公告<span>2015-7-13</span></a></li>
+         	<li><a href="#">·　公告公告公告公告公告公告公告公告公告<span>2015-7-13</span></a></li>
+        	<li><a href="#">·　公告公告公告公告公告公告公告公告<span>2015-7-13</span></a></li>           
+        </ul>
+    </div>
+    
+</div> 
+
+<script>
+function news()
+	{
+		var oLi=document.getElementById("newstitle").getElementsByTagName("li");
+		var oUl=document.getElementById("newscontent").getElementsByTagName("ul");
+		for(i=0;i<oLi.length;i++)
+		{
+			oLi[i].index=i;
+			oLi[i].onclick=function ()
+			{
+				for(j=0;j<oLi.length;j++)
+				{
+					oLi[j].className="";
+					oUl[j].style.display="none";
+					}
+				this.className="current";
+				oUl[this.index].style.display="block";
+				
+			}
+		}
+		
+	}
+news();
+</script>
+
+     </div>
+
+</div>
+</div>
+
+<!--公司简介-->
+<div class="menus">
+<div class="menu">
+     <div class="menu1">
+          <h2>Company profile<br><span>公司简介</span></h2>
+          <p></p>
+          <div class="menu2">
+               <p>河北金海蛟龙管道有限公司始建于一九九六年，公司本部坐落于京、津、保腹地。紧邻华北明珠——白洋淀，环境优美，交通便利，京石高速、京开高速、津保高速雄县东站即到。是通讯管道、塑料管材、管件专业生产制造商。本公司从德国引进65x2型全自动生产线2条，上海申威达生产线4条，拥有专业技术人员和先进的检测设备。年生产塑料管材、管件八千吨。先后被省、市评为守合同重信用企业，并已经通过ISO9001:2000版认证。</p>
+               <p style="margin-top:12px;">公司是一家专业从事管道生产制造的高科技企业，拥有国内外先进的塑胶管材生产设备，大专以上学历的员工占35%。公司主导产品为电力管道系统（CPVC电力管、CFRP碳素管、SBB玻璃钢管）；通讯管道系统（HDPE、PVC双壁波纹管、梅花管、三色光缆管、PE过道顶管、硅芯管、PVC方孔格栅管）；给水管道系统（PE给水管材、pvc给水管）；排水管道系统（PE双壁波纹管、PVC双壁波纹管）......</p>
+          </div>
+     </div>
+     <div class="menu3"><a href="#"><img src="images/tp2.jpg"></a></div>
+</div>
+</div>
+
+<!--产品展示-->
+<div class="products">
+<div class="product">
+     <div class="product1"><p>产品展示<br><span>products show</span></p></div>
+     <div class="product2">
+          <a href="#"><img src="images/tp3.jpg" style="margin-left:0;"></a>
+           <a href="#"><img src="images/tp4.jpg"></a>
+          <a href="#"><img src="images/tp5.jpg"></a>
+          <a href="#"><img src="images/tp6.jpg"></a>    
+     </div>
+</div>
+</div>
+
+<!--联系我们-->
+<div class="contacts">
+<div class="contact">
+     <div class="contact1">
+          <h2>contact us<br><span>联系我们</span></h2>
+          <p></p>
+     </div>
+     <div class="contact2">
+          <a href="#"><img src="images/tp7.jpg"></a>
+          <div class="contact3">
+               <div class="contact31">
+                     <h2><a href="#">河北金海蛟龙管道有限公司</a></h2>
+                     <p class="heng"></p>
+                     <p>联系人：刘经理</p>
+                     <p>电    话：15076391188</p>
+                     <p>手    机：15076391188</p>
+                     <p>传    真：0312-5734628</p>
+                     <p>地    址：<a href="#">河北省保定市雄县米北工业区</a></p>
+               </div>
+               <a href="#"><img src="images/tp8.jpg" style="float:right;"></a>
+          </div>
+     </div>
+
+</div>
+</div>
+
+
+<div class="clear"></div>
+<!--bottom-->
+<div class="bottom">
+     <div class="bottom1">
+     <div class="bottom11">
+          <a href="#"><img src="images/tp16.jpg"></a>
+          <p><a href="#">cpvc电力管</a>  |  <a href="#">电力管</a>  |  <a href="#">mpp电缆保护管</a>  |  <a href="#">玻璃钢电缆保护管</a></p> 
+     </div>
+     </div>
+     <p>Copright©2016 <a href="#">河北金海蛟龙管道有限公司</a>版权所有     技术支持：小象网络    电话：15076391188    访问量：254</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
